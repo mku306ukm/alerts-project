@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    $(function(){
+        $("#closebtn").click(function(){
+            $("#redbox").alert('close');
+        })
+        $("#redbox").on("close.bs.alert",function(){
+            alert("close");
+        })
+        $("#redbox").on("closed.bs.alert",function(){
+            alert("closed");
+        })
+    });
+</script>
+
+
+
+  </head>
+  <body>
+    <div class="container">
+        <h2 class="py-3 text-center">alerts</h2>
+        <div class="row py-3 justify-content-center">
+            <div class="col-md-7">
+            <div class="alert alert-primary">
+               eaque ex fugiat veniam alias inventore eligendi, animi debitis quos molestias, modi officiis obcaecati hic? Fugiat excepturi adipisci iusto doloremque asperiores.
+              <button class="close" data-dismiss="alert">
+                  <span>&times;</span>
+
+              </button>
+           </div>
+           </div>
+           <div class="col-md-7">
+            <div class="alert alert-success">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam, quaerat expedita aliquid, ab doloremque aperiam ea sed odit commodi dignissimos cumque eligendi cupiditate at molestiae minus? Culpa tempore eaque ex fugiat veniam alias inventore eligendi, animi debitis quos molestias, modi officiis obcaecati hic? Fugiat excepturi adipisci iusto doloremque asperiores.
+           </div>
+           </div>
+           <div class="col-md-7">
+            <div id="redbox" class="alert alert-danger">
+                <h3 class="alert alert-heading">heading goes here</h3>
+              Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non natus recusandae tempore vel qui nisi voluptatibus maxime, tenetur beatae. Laboriosam quis ratione optio ullam dolor soluta magnam suscipit atque eum. Tempora illum provident aspernatur voluptatem in temporibus iure animi, repudiandae vitae itaque dolorum placeat molestias totam hic tenetur praesentium ea sint. Veritatis expedita dolore hic consectetur odio eveniet. Voluptatem enim nihil necessitatibus mollitia expedita. Mollitia tempore impedit, at doloribus quam ut iusto dolor nostrum eveniet, error molestias nam! Deleniti voluptatibus sequi, nesciunt sit doloribus facilis neque officiis ipsa magni iusto repellat obcaecati eos hic voluptatem suscipit eaque libero expedita? Accusamus. amet consectetur adipisicing elit. Placeat ullam, quaerat expedita aliquid, ab doloremque aperiam ea sed odit commodi dignissimos cumque eligendi cupiditate at molestiae minus? Culpa tempore eaque ex fugiat veniam alias inv <hr> entore eligendi, animi debitis quos molestias, modi officiis obcaecati hic? Fugiat excepturi adipisci iusto doloremque asperiores.
+           </div>
+           <button class="btn btn-danger" id="closebtn">close</button>
+           </div>
+
+
+        </div>
+    </div> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
